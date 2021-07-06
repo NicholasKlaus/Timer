@@ -1,13 +1,12 @@
-import { START } from '../constants/types';
+
 
 const initialState = {
-
+  SessionLength: 25,
+  BreackLength: 5
 };
 
 export const timerReducer = (state = initialState, action: any) => {
   switch(action.type) {
-    case START:
-      return null;
     default:
       return state;
   }

@@ -1,9 +1,14 @@
 import React from 'react';
+import { BreackLength, SessionLength } from './components/index';
 
 function App() {
+ 
   return (
     <div className="App">
-      Hello
+      <div className="wrapper">
+        <BreackLength />
+        <SessionLength />
+      </div>
     </div>
   );
 }
