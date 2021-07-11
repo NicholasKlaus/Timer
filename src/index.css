@@ -1,4 +1,4 @@
-@import './style/presetStyle.css';
+@import './style/App.css';
 @import './icofont/icofont.min.css';
 
 body {
@@ -13,4 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  height: 100vh;
 }
