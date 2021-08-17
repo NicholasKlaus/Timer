@@ -1,5 +1,18 @@
-@import './scss/App.scss';
-@import './icofont/icofont.min.css';
+@import './App.scss';
+@import './componets.DarkModeToggler.scss';
+@import '../icofont/icofont.min.css';
+
+html, body, #root, .App {
+  height: 100vh;
+}
+
+.App {
+  background-color: #eeecec;
+}
+
+.dark-theme .App {
+  background-color: #2e2e2e;
+}
 
 body {
   margin: 0;
@@ -13,8 +26,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.App {
-  height: 100vh;
 }

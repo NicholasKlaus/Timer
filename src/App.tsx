@@ -1,17 +1,19 @@
 import React from 'react';
-import { BreakLength, SessionLength, Timer } from './components/index';
+import { BreakLength, Header, SessionLength, Timer } from './components/index';
 
 function App() {
  
   return (
     <div className="App">
-      <div className="main-wrap">
-        <h2>Pomodoro Clock</h2>
-        <div className="interval-wrap">
-          <BreakLength />
-          <SessionLength />
+      <Header />
+      <div className="container">
+        <div className="main-wrap">
+          <div className="interval-wrap">
+            <BreakLength />
+            <SessionLength />
+          </div>
+          <Timer />
         </div>
-        <Timer />
       </div>
     </div>
   );
