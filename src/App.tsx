@@ -1,5 +1,5 @@
 import React from 'react';
-import { BreackLength, SessionLength, Timer } from './components/index';
+import { BreakLength, SessionLength, Timer } from './components/index';
 
 function App() {
  
@@ -8,7 +8,7 @@ function App() {
       <div className="main-wrap">
         <h2>Pomodoro Clock</h2>
         <div className="interval-wrap">
-          <BreackLength />
+          <BreakLength />
           <SessionLength />
         </div>
         <Timer />
