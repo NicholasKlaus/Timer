@@ -37,10 +37,6 @@ h4 {
   margin-bottom: 10px;
 }
 
-.dark-theme h4 {
-  color: #fff;
-}
-
 .interval-container {
   display: flex;
   margin: 0 40px;
@@ -117,5 +113,9 @@ h4 {
 }
 
 .dark-theme .interval-length {
+  color: #fff;
+}
+
+.dark-theme h4 {
   color: #fff;
 }

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { decBreak, incBreak } from '../redux/actions';
 
 export const BreakLength = () => {
-  const { breakLength } = useSelector(({timer}:AppState) => timer);
+  const { breakLength } = useSelector(({ timer }:AppState) => timer);
   const dispatch = useDispatch();
 
   const decreaseBreak = () => {

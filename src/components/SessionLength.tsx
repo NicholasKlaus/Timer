@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { incSession, decSession } from '../redux/actions';
 
 export const SessionLength = () => {
-  const { sessionLength } = useSelector(({timer}:AppState) => timer);
+  const { sessionLength } = useSelector(({ timer }:AppState) => timer);
   const dispatch = useDispatch();
 
   const decreaseSession = () => {

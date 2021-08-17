@@ -4,7 +4,7 @@ import { startTimer, stopTimer, resetTimer, decSeconds, switchSession, switchBre
 import soundfile from '../audioFile/soundfile.mp3';
 
 export const Timer = () => {
-  const { timerRunning, secondsLeft, interval } = useSelector(({timer}:AppState) => timer);
+  const { timerRunning, secondsLeft, interval } = useSelector(({ timer }:AppState) => timer);
   const dispatch = useDispatch();
   const audio = new Audio(soundfile);
   let minutes = Math.floor(secondsLeft / 60);
@@ -13,6 +13,7 @@ export const Timer = () => {
   const Play = () => {
     dispatch(startTimer());
   }
+  
   const Stop = () => {
     dispatch(stopTimer());
   }

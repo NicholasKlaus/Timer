@@ -37,7 +37,6 @@ export const DarkModeToggler: React.FC = () => {
       document.body.classList.add(lightTheme)
       setIsDarkTheme(false);
     }
-
   }
 
   return (
