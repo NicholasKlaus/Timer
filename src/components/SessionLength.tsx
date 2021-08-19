@@ -21,12 +21,12 @@ export const SessionLength = () => {
   }
 
   return (
-    <div>
-      <h4>Session Length</h4>
-      <div className="interval-container">
-        <i className="icofont-caret-left arrow" onClick={decreaseSession}></i>
-        <p className="interval-length"> {sessionLength} </p>
-        <i className="icofont-caret-right arrow" onClick={increaseSession}></i>
+    <div className="interval__session interval_item">
+      <h4 className="interval__title title">Session Length</h4>
+      <div className="interval__container">
+        <i className="icofont-caret-left interval__arrow" onClick={decreaseSession}></i>
+        <p className="interval__length"> {sessionLength} </p>
+        <i className="icofont-caret-right interval__arrow" onClick={increaseSession}></i>
       </div>
     </div>
   );

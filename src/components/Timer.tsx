@@ -45,17 +45,17 @@ export const Timer = () => {
   }, [timerRunning, secondsLeft, interval, dispatch]);
 
   return(
-    <div>
-      <div className="timer-container">
-        <h4> {interval} </h4>
-        <div className="timer">
+    <div className="timer">
+      <div className="timer__container">
+        <h4 className="timer__title title"> {interval} </h4>
+        <div className="timer__display">
           {minutes < 10 ? ("0" + minutes).slice(-2) : minutes}:{seconds < 10 ? ("0" + seconds).slice(-2) : seconds}
         </div>
       </div>
-      <div className="timer-actions">
-        <button className="btn" onClick={Play}>Play</button>
-        <button className="btn" onClick={Stop}>Stop</button>
-        <button className="btn" onClick={Reset}>Reset</button>
+      <div className="timer__actions">
+        <button className="timer__btn" onClick={Play}>Play</button>
+        <button className="timer__btn" onClick={Stop}>Stop</button>
+        <button className="timer__btn" onClick={Reset}>Reset</button>
       </div>
     </div>
   );

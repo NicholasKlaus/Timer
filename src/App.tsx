@@ -7,8 +7,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="container">
-        <div className="main-wrap">
-          <div className="interval-wrap">
+        <div className="wrap">
+          <div className="interval interval_wrap">
             <BreakLength />
             <SessionLength />
           </div>

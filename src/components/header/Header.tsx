@@ -5,8 +5,8 @@ export const Header = () => {
 
   return (
     <div className="header">
-      <div className="header-wrap">
-        <h2 className="header-title">Pomodoro Clock</h2>
+      <div className="header__wrap">
+        <h2 className="header__title title">Pomodoro Clock</h2>
         <DarkModeToggler />
       </div>
     </div>

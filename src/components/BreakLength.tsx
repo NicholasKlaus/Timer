@@ -21,12 +21,12 @@ export const BreakLength = () => {
   }
 
   return (
-    <div>
-      <h4>Break Length</h4>
-      <div className="interval-container">
-        <i className="icofont-caret-left arrow" onClick={decreaseBreak}></i>
-        <p className="interval-length"> {breakLength} </p>
-        <i className="icofont-caret-right arrow" onClick={increaseBreak}></i>
+    <div className="interval__break interval_item">
+      <h4 className="interval__title title">Break Length</h4>
+      <div className="interval__container">
+        <i className="icofont-caret-left interval__arrow" onClick={decreaseBreak}></i>
+        <p className="interval__length"> {breakLength} </p>
+        <i className="icofont-caret-right interval__arrow" onClick={increaseBreak}></i>
       </div>
     </div>
   );
